@@ -14,7 +14,7 @@ Using my other repos, the idea here is to explore a java backend and testng test
     - using MS Extension pack for Java
 - sudo apt install maven
 - mvn clean install
-```
+```text
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------------< com.simplebank:simplebank-java >-------------------
@@ -38,7 +38,7 @@ Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
 ```
 - Checking that I can run spring boot
     - mvn spring-boot:run
-```
+```text
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------------< com.simplebank:simplebank-java >-------------------
@@ -88,7 +88,7 @@ Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
 Be mindful java dependencies which can by default set Junit as the expected test framework.  I need to exclude some frameworks in the pom.xml
 ```
 mvn dependency:tree -Dscope=test
-```
+```text
         <!-- Test dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -115,7 +115,8 @@ mvn dependency:tree -Dscope=test
         </dependency>
 ```
 Run the tests with mvn
-```
+
+```text
 [INFO] Changes detected - recompiling the module! :source
 [INFO] Compiling 8 source files with javac [debug release 21] to target/classes
 [INFO] Annotation processing is enabled because one or more processors were found
